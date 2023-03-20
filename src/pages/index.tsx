@@ -1,5 +1,8 @@
 export default function Home() {
   return (
-      <h1>Hello</h1>
+    <div>
+      <h1>BookWise</h1>
+      <h2>Login</h2>
+    </div>
       )
 }
