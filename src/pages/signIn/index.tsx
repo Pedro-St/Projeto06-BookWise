@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Logo from "../../assets/Logo.svg"
 import previewImage  from '../../assets/previa.svg';
-import { HomeContainer, Preview } from "./styles";
+import { BoxdeLogin, HomeContainer, LoginGroup, Preview } from "./styles";
 
 export default function SigIn() {
     return(
@@ -13,6 +14,15 @@ export default function SigIn() {
                     alt="preview"
                 />
             </Preview>
+            <BoxdeLogin>
+               <LoginGroup>
+               <h2>Boas Vindas!</h2>
+                <p>Faça seu Login ou acesse como visitante.</p>
+               </LoginGroup>
+              
+               
+             
+            </BoxdeLogin>
         </HomeContainer>
     )               
 }
