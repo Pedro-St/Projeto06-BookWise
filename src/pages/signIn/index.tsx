@@ -1,7 +1,9 @@
 import Image from "next/image";
-import Logo from "../../assets/Logo.svg"
 import previewImage  from '../../assets/previa.svg';
-import { BoxdeLogin, HomeContainer, LoginGroup, Preview } from "./styles";
+import googleLogo from '../../assets/google.png'
+import githubLogo from '../../assets/github.png'
+import rocketLogo from '../../assets/RocketLaunch.png'
+import { BoxdeLogin, HomeContainer, LoginGroup, Preview, WelcomeText } from "./styles";
 
 export default function SigIn() {
     return(
@@ -16,8 +18,44 @@ export default function SigIn() {
             </Preview>
             <BoxdeLogin>
                <LoginGroup>
-               <h2>Boas Vindas!</h2>
-                <p>Faça seu Login ou acesse como visitante.</p>
+                <WelcomeText>
+                    <h2>Boas Vindas!</h2>
+                    <p>Faça seu Login ou acesse como visitante.</p>
+                </WelcomeText>
+
+                   
+                    <button>
+                        <Image  
+                            src={googleLogo}
+                            alt="logo"
+                            quality={100}
+                            height={32}
+                        />
+                         Entar com Google
+                    </button>
+
+                    <button>
+                        <Image  
+                            src={githubLogo}
+                            alt="logo"
+                            quality={100}
+                            height={32}
+                        />
+                         Entrar com GitHub
+                    </button>
+
+                    <button>
+                        <Image  
+                            src={rocketLogo}
+                            alt="logo"
+                            quality={100}
+                            height={32}
+                        />
+                        Acessar como visititante 
+                    </button>
+
+
+
                </LoginGroup>
               
                
