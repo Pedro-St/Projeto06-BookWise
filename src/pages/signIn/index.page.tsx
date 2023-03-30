@@ -54,8 +54,6 @@ export default function SigIn() {
                         Acessar como visititante 
                     </button>
 
-
-
                </LoginGroup>
               
                
